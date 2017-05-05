@@ -24,7 +24,77 @@
     </div>
   </header>
 
-  <section id="jumbotron">
+  <section class="hidden-lg-up" id="jumbotron-responsive">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 p-0 bg-dark text-center pb-4">
+          <img src="assets/media/backbotron.jpg" class="img-fluid" alt="Background pianist">
+            <div class="text-content responsive-jumbotron text-center">
+              <span>29 DE MAYO</span><br>
+              <span>GRAN TEATRO</span><br>
+              <span>NACIONAL</span>
+            </div>
+            <a href="#register" class="btn btn-danger call-action-btn"><i class="fa fa-ticket"></i>10% DE DESCUENTO AQUí</a>
+        </div>
+        <div class="col-12 col-md-6 img-content box-shadow">
+          <img src="assets/media/profile.jpg" class="img-static" alt="">
+        </div>
+        <div class="col-12 col-md-6 bg-white caption-text">
+          <div class="text-content text-center">
+            <h6 class="title">La promesa en el piano</h6>
+            <h3 class="title-sec">Benjamin Grosvenor</h3>
+            <p class="text mb-2">
+              El pianista británico es internacionalmente conocido por sus electrizantes interpretaciones. Su virtuosa inspiración y complejidades técnicas nunca comprometen la profundidad y la inteligencia de su musicalidad.
+            </p>
+            <div id="carouselquotemain-r" class="carousel slide mt-0" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselquotemain-r" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselquotemain-r" data-slide-to="1"></li>
+                <li data-target="#carouselquotemain-r" data-slide-to="2"></li>
+                <li data-target="#carouselquotemain-r" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <p class="text quote">
+                    <i class="fa fa-quote-left mr-1"></i>
+                    Un talento extraordinario y exuberante… sin miedo y emocionante
+                    <i class="fa fa-quote-right ml-1"></i>
+                    <b>Gramophone</b>
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <p class="text quote">
+                    <i class="fa fa-quote-left mr-1"></i>
+                    … Un artista internacional, que funciona junto a pianistas legendarios dos o tres veces su edad
+                    <i class="fa fa-quote-right ml-1"></i>
+                    <b>Classical Music Magazine</b>
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <p class="text quote">
+                    <i class="fa fa-quote-left mr-1"></i>
+                    Ordena el escenario con facilidad aristocrática… un temperamento como pocos
+                    <i class="fa fa-quote-right ml-1"></i>
+                    <b>The New York Times</b>
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <p class="text quote">
+                    <i class="fa fa-quote-left mr-1"></i>
+                    Grosvernor, a sus 24 años, es reconocido por su sonido personal, descrito como poético y sutilmente irónico …
+                    <i class="fa fa-quote-right ml-1"></i>
+                    <b>The Independent</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jumbotron" class="hidden-md-down">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 p-0 bg-jumbotron">
@@ -104,14 +174,9 @@
 
   <section id="pricing">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-7 img-content text-center">
-          <img src="assets/media/stage.jpg" class="mb-4" alt="">
-          <div class="call-action-content text-center">
-            <a href="#register" class="btn btn-danger call-action-btn"><i class="fa fa-ticket"></i> COMPRA TU ENTRADA</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-5">
+      <div class="row align-items-center justify-content-center">
+
+        <div class="col-12 col-md-12 col-lg-6">
           <table class="table">
              <thead class="bg-danger">
                <tr>
@@ -199,6 +264,12 @@
              </tbody>
            </table>
         </div>
+        <div class="col-12 col-md-8 col-lg-6 img-content text-center">
+          <img src="assets/media/stage.jpg" class="mb-4" alt="">
+          <div class="call-action-content text-center">
+            <a href="#register" class="btn btn-danger call-action-btn"><i class="fa fa-ticket"></i> COMPRA TU ENTRADA</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -208,7 +279,7 @@
         <h3 class="title-head display-4 text-warning">REGISTRO</h3>
         <form id="formRegister" action="controller/register.php" method="post">
           <div id="form-content" class="row align-items-center">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-7">
                 <div class="form-group">
                   <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -240,7 +311,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5">
               <div class="text-content">
                 <h5 class="text text-white bg-dark-out p-2">Déjanos tus datos completos para recibir el 10% de descuento en tu entrada.</h5>
                 <button type="submit" class="btn btn-danger call-action-btn">Obtener 10% de dscto.</button>
@@ -253,12 +324,12 @@
 
   <section id="schedule">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-12 text-center">
           <h3 class="title-head display-4">PROGRAMA</h3>
         </div>
         <div class="col-12 caption">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-12 col-md-6 img-content">
               <img src="assets/media/schedule.jpg" class="img-static" alt="">
             </div>
@@ -298,7 +369,7 @@
     </div>
   </section>
 
-  <section id="break"></section>
+  <section id="break" class="hidden-md-down"></section>
 
   <section id="gallery">
     <div class="container">
@@ -336,7 +407,7 @@
             <p class="text text-white">2017 &copy; TQ Producciones | Todos los derechos reservados </p>
             <p class="text text-white">Diseñado y desarrollado por <a href="http://www.ilustraconsultores.com">IlustraConsultores</a></p>
           </div>
-          <div class="col-12 col-md-6 text-right">
+          <div class="col-12 col-md-6 text-xs-center text-md-right">
             <a href="#register" class="call-action-btn btn btn-danger">Compra tu entrada</a>
           </div>
         </div>
