@@ -1,7 +1,6 @@
 const msgForm = '<div id="msgStatus" class="form-control-feedback">:msg:</div>';
 const msgSuccessForm = '<div class="col-12 text-center bg-dark-out p-2"><h1 class="display-3 text-white m-0">GRACIAS POR REGISTRATE!</h1>'+
-                       '<h5 class="title-sec text-success m-0">Te enviaremos un mensaje con tu cupon de descuento, '+
-                       'sino lo encuentras en tu bandeja asegúrate de revisarlo en spam</h5></div>';
+                       '<h5 class="title-sec text-success m-0">Nos comunicaremos contigo a la brevedad</h5></div>';
 /***** Formulario de suscripcion ***/
 $('#formRegister').submit(function (e) {
   e.preventDefault();
@@ -18,7 +17,7 @@ $('#formRegister').submit(function (e) {
         var $msgSuccess = $(msgSuccessForm);
         $('#form-content').append($msgSuccess);
       } else if (msg == "warning") {
-        var mensaje = "Ya te encuentras registrado."
+        var mensaje = "Tuvimos un problema, inténtalo más tarde."
         $('.form-group').addClass('has-danger');
         $('input').addClass('form-control-danger');
       } else {

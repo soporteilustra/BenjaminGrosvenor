@@ -105,12 +105,13 @@ header .title-brand::before {
   bottom: 150px;
 }
 #jumbotron .caption .caption-text {
-  padding: 3em 1em 3em 1em;
-  height: 460px;
+  padding: 1em 1em 3em 1em;
+  height: 474.5px;
   text-align: center;
 }
 #jumbotron .caption .caption-text .title {
   color: #646464;
+  font-size: .8em;
 }
 #jumbotron .caption .caption-text .title-sec {
   color: #aca672;
@@ -167,7 +168,7 @@ header .title-brand::before {
 }
 /** REGISTER **/
 #register {
-  padding: 3em;
+  padding: 4em 1em;
   background: #000;
   background-image: url(../media/bgregister.jpg);
   background-position: center;
@@ -176,26 +177,27 @@ header .title-brand::before {
 }
 
 #schedule {
-  height: 700px;
-  padding: 3em 1em 1em 1em;
+  height: auto;
+  padding: 3em 1em 3em 1em;
   background: #efeee9;
   background-image: url(../media/bgnoise.png);
 }
 .scheduling > li {
-  margin: 2em auto;
+  margin: 1.5em auto;
 }
 .scheduling > li > h4:first-child {
   color: #424242;
   font-family: 'Inknut Antiqua',serif;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .scheduling > li > h4:last-child {
   color: #aca672;
   font-family: 'Josefin Slab',serif;
+  font-size: 1.4em;
 }
 
 #break {
-  height: 250px;
+  height: 50px;
 }
 
 #gallery {
@@ -223,7 +225,24 @@ footer a {
   color: #aca672;
 }
 /** STANDARD STYLES **/
+#myModal .modal-content{
+  background: #000;
+  padding: 1em;
+}
+#logo-tqac {
+  width: 30%;
+}
 form .form-group {
+}
+#exampleModalLabel {
+  color: #fff;
+  font-family: 'Roboto Slab';
+}
+#register .container .row > div {
+  margin-bottom: .7em;
+}
+#register img {
+  max-height: 100px;
 }
 form .form-group .input-group-addon {
   width: 45px;
@@ -232,7 +251,7 @@ form .form-group .input-group-addon {
   border-bottom: 2px solid #aca672;
   border-radius: 0px;
 }
-form .form-group .input-group input {
+form .form-group .input-group input, form .form-group .input-group textarea {
   border: 0;
   border-radius: 0;
   border-bottom: 2px solid #aca672;
@@ -241,7 +260,22 @@ form .form-group .input-group input {
   font-family: 'Roboto Slab', serif;
 
 }
-form .form-group .input-group input::-webkit-input-placeholder {
+form .form-group .input-group input::-webkit-input-placeholder, form .form-group .input-group textarea::-webkit-input-placeholder {
+  color: #fff !important;
+  font-family: 'Roboto Slab',serif;
+}
+form .form-group .input-group input::-moz-input-placeholder, form .form-group .input-group textarea::-moz-input-placeholder {
+  color: #fff !important;
+  font-family: 'Roboto Slab',serif;
+}
+form .form-group .input-group input::-ms-input-placeholder, form .form-group .input-group textarea::-ms-input-placeholder {
+  color: #fff !important;
+  font-family: 'Roboto Slab',serif;
+}
+form .form-group .input-group input::-o-input-placeholder, form .form-group .input-group textarea::-o-input-placeholder {
+  color: #fff !important;
+  font-family: 'Roboto Slab',serif;
+}form .form-group .input-group input::input-placeholder, form .form-group .input-group textarea::input-placeholder {
   color: #fff !important;
   font-family: 'Roboto Slab',serif;
 }
@@ -277,6 +311,10 @@ a i {
 }
 .text {
   font-family: 'Josefin Slab', serif;
+}
+.text span.text-uppercase {
+  font-size: .6em;
+  font-family: 'Roboto Slab', serif;
 }
 .text b {
   font-family: 'Roboto Slab', serif;

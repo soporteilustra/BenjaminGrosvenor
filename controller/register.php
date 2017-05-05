@@ -1,6 +1,6 @@
 <?php
 include_once 'connection.php';
-include 'sendcupon.php';
+include 'sendmail.php';
 
 //get parameters
 $name = $_POST['name'];
@@ -8,24 +8,29 @@ $edad = $_POST['edad'];
 $distrito = $_POST['distrito'];
 $email = $_POST['email'];
 $phone = $_POST['telefono'];
+$message = $_POST['message'];
 
 
 //table data
 $table = 'registros';
 
-if (!userExists($email, $conexion)) {
+//if (!userExists($email, $conexion)) {
   # code...
-  $insertar = "INSERT INTO $table (nombre,edad,distrito,email,telefono) VALUES ('$name','$edad','$distrito','$email','$phone')";
+  $insertar = "INSERT INTO $table (nombre,edad,distrito,email,telefono,mensaje) VALUES ('$name','$edad','$distrito','$email','$phone','$message')";
   mysqli_query($conexion,$insertar);
-  $correlativo = mysqli_insert_id();
-  sendCupon($email, $correlativo, $name);
-  $message = 'success';
-
-} else {
+  //$correlativo = mysqli_insert_id();
+  //sendCupon($email, $correlativo, $name);
+  $bool = sendEmail($name,$edad,$distrito,$email,$phone,$message);
+  if ($bool) {
+    # code...
+    $message = 'success';
+  } else {
+    $message = 'warning';
+  }
+//} else {
   # code...
-  $message = 'warning';
-}
-
+//  $message = 'warning';
+//}
 
 function userExists($user, $conexion)
 {

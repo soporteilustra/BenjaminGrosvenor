@@ -24,6 +24,7 @@ echo 	"<th>Edad</th> ";
 echo 	"<th>Distrito</th> ";
 echo  "<th>Correo electrónico</th> ";
 echo  "<th>Número de contacto</th> ";
+echo  "<th>Mensaje</th> ";
 echo 	"<th>Fecha de suscripción</th> ";
 echo "</tr> ";
 
@@ -35,6 +36,7 @@ while($row = mysqli_fetch_array($resultado)){
 	$distrito = $row['distrito'];
 	$email = $row['email'];
   $telefono = $row['telefono'];
+  $message = $row['mensaje'];
 	$fecha = $row['fecha'];
 
 	echo "<tr> ";
@@ -44,6 +46,7 @@ while($row = mysqli_fetch_array($resultado)){
 	echo 	"<td>".$distrito."</td> ";
   echo 	"<td>".$email."</td> ";
   echo 	"<td>".$telefono."</td> ";
+  echo 	"<td>".$message."</td> ";
 	echo 	"<td>".$fecha."</td> ";
 	echo "</tr> ";
 
