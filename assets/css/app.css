@@ -1,0 +1,335 @@
+/**** FONTS GOOGLE ****/
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua|Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400');
+
+/**** General styles *****/
+/** HEADER **/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  padding: 1.5em 1.5em 2.5em 1.5em;
+  background: rgba(0, 0, 0, 0.5);
+}
+header .title-brand {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 2em;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+header .title-brand::after {
+  content: ' ';
+  width: 77.5%;
+  height: 2px;
+  background: #e20613;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+}
+header .title-brand::before {
+  content: 'La nueva revelación del piano';
+  font-family: 'Josefin Slab', serif;
+  width: 100%;
+  text-align: right;
+  font-size: .25em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: -17px;
+  right: 0;
+}
+
+/** JUMBOTRON **/
+#jumbotron {
+  position: relative;
+  background: #efeee9;
+  background-image: url(../media/bgnoise.png);
+}
+.bg-jumbotron {
+  position: relative;
+}
+.bg-jumbotron img {
+  width: 100%;
+}
+.bg-jumbotron .jb-caption {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.bg-jumbotron .jb-caption > div {
+  display: block;
+  width: 25%;
+  margin: auto;
+  padding: 1em;
+}
+.bg-jumbotron .jb-caption span {
+  display: inline-block;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 3.5em;
+  line-height: 1.3em;
+}
+.bg-jumbotron .jb-caption span:nth-child(3) {
+  font-size: 2.9em !important;
+}
+.bg-jumbotron .jb-caption span:last-child {
+  font-size: 4em;
+}
+.bg-jumbotron .jb-caption span:not(:last-child) {
+  border-bottom: 3px solid #e20613;
+}
+.call-action-content {
+  padding: 2em !important;
+}
+.call-action-btn {
+  padding: .5em 1em;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  border-color: #e20613;
+  border-radius: 20px;
+}
+.call-action-btn i {
+  margin-right: .5em;
+}
+#jumbotron .caption {
+  position: relative;
+  bottom: 150px;
+}
+#jumbotron .caption .caption-text {
+  padding: 3em 1em 3em 1em;
+  height: 460px;
+  text-align: center;
+}
+#jumbotron .caption .caption-text .title {
+  color: #646464;
+}
+#jumbotron .caption .caption-text .title-sec {
+  color: #aca672;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+#jumbotron .caption .caption-text .title-sec::after {
+  content: '\f0c8';
+  font-family: 'FontAwesome';
+  font-size: .6em;
+  position: absolute;
+  bottom: -30px;
+  left: 45%;
+  width: 10%;
+  padding: .1em;
+  text-align: center;
+  color: #e20613;
+  background: #fff;
+  transform: rotate(45deg);
+}
+#jumbotron .caption .caption-text .title-sec::before {
+  content: ' ';
+  font-family: 'FontAwesome';
+  font-size: .6em;
+  position: absolute;
+  bottom: -20px;
+  left: 30%;
+  width: 40%;
+  height: 2px;
+  text-align: center;
+  background: #e20613;
+}
+#jumbotron .caption::after {
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  content: '\f00d';
+  font-family: 'FontAwesome';
+  border: 1px solid #aca672;
+  color: #aca672;
+  width: 50px;
+  height: 50px;
+  font-size: 1.8em;
+  text-align: center;
+  transform: rotate(45deg);
+}
+/** PRICING **/
+#pricing {
+  padding: 3em 0em 2em 0em;
+}
+#pricing table {
+  font-size: .9em;
+  font-family: 'Josefin Slab', serif;
+}
+/** REGISTER **/
+#register {
+  padding: 3em;
+  background: #000;
+  background-image: url(../media/bgregister.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#schedule {
+  height: 700px;
+  padding: 3em 1em 1em 2em;
+  background: #efeee9;
+  background-image: url(../media/bgnoise.png);
+}
+.scheduling > li {
+  margin: 2em auto;
+}
+.scheduling > li > h4:first-child {
+  color: #424242;
+  font-family: 'Inknut Antiqua',serif;
+  font-size: 2em;
+}
+.scheduling > li > h4:last-child {
+  color: #aca672;
+  font-family: 'Josefin Slab',serif;
+}
+
+#break {
+  height: 250px;
+}
+
+#gallery {
+  padding: 3em 0em 0em 0em;
+  background: #efeee9;
+  background-image: url(../media/bgnoise.png);
+  text-align: center;
+  border-bottom: 10px solid #fff;
+}
+
+footer {
+  background: #000;
+  background-image: url(../media/bgfooter.jpg);
+}
+footer .filter {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 4em 1em;
+}
+footer p {
+  margin: 0;
+  font-size: 1.3em;
+}
+footer a {
+  color: #aca672;
+}
+/** STANDARD STYLES **/
+form .form-group {
+}
+form .form-group .input-group-addon {
+  width: 45px;
+  color: #fff;
+  background: #aca672;
+  border-bottom: 2px solid #aca672;
+  border-radius: 0px;
+}
+form .form-group .input-group input {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #aca672;
+  background: transparent;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+
+}
+form .form-group .input-group input::-webkit-input-placeholder {
+  color: #fff !important;
+  font-family: 'Roboto Slab',serif;
+}
+/** contents **/
+.img-content {
+  padding: 0;
+}
+.img-content img {
+  width: 100%;
+}
+.text-content {
+  padding: 1em;
+}
+.box-shadow {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.btn {
+  font-family: 'Roboto Slab', serif;
+}
+table tr th {
+  font-family: 'Roboto Slab', serif;
+  font-size: .9em;
+}
+a i {
+  margin-right: .5em;
+}
+/** fonts **/
+.title {
+  font-family: 'Inknut Antiqua', serif;
+}
+.title-sec {
+  font-family: 'Roboto Slab', serif;
+}
+.text {
+  font-family: 'Josefin Slab', serif;
+}
+.text b {
+  font-family: 'Roboto Slab', serif;
+}
+.quote b {
+  display: block;
+  margin-top: .5em;
+}
+.text-danger {
+  color: #e20613 !important;
+}
+.text-warning {
+  color: #aca672 !important;
+}
+.title-head {
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: .7em;
+}
+.title-head i {
+  margin-right: .3em;
+  font-size: .8em;
+}
+/** background **/
+.bg-white {
+  background: #fff !important;
+}
+.bg-dark {
+  background: #000 !important;
+}
+.bg-dark-out {
+  background: rgba(0, 0, 0, 0.5); !important;
+}
+.bg-danger {
+  background: #e20613 !important;
+  color: #fff !important;
+}
+/** buttons **/
+.btn-danger {
+  background: #e20613 !important;
+  cursor: pointer;
+}
+/** slide **/
+.carousel-indicators {
+  bottom: -25px;
+}
+.carousel-indicators li {
+  background-color: rgba(189, 189, 189, 0.8);
+}
+.carousel-indicators li.active {
+  background-color: #e20613;
+}
+
+#logReport {
+   background: #424242;
+   height: 100vh;
+}
