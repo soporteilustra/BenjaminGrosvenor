@@ -16,7 +16,7 @@ if (userExists($user,$table, $conexion)) {
     $band = 'user';
 }
 $_SESSION['result'] = $band;
-header('Location: http://localhost:8000/registros/');
+header('Location: http://benjamingrosvenorenlima.com/registros/');
 
 function userExists($user, $table,$conexion)
 {

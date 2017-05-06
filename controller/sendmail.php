@@ -2,7 +2,7 @@
 function sendEmail($name,$edad,$distrito,$email,$phone,$message)
 {
   # code...
-  $email_to = "soporte@ilustraconsultores.com";
+  $email_to = "soporte@ilustraconsultores.com, branco@ilustraconsultores.com, jeanmev@outlook.es";
   $email_subject = "Consulta desde Benjamin Grosvenor en Lima - Landing";
 
   $email_message = "Detalles de la consulta: <br>\n\n";
@@ -11,7 +11,7 @@ function sendEmail($name,$edad,$distrito,$email,$phone,$message)
   $email_message .= "Distrito: " . $distrito . "<br>\n";
   $email_message .= "Correo: " . $email . "<br>\n";
   $email_message .= "Tel&eacute;fono: " . $phone . "<br>\n";
-  $email_message .= "Mensjae: " . $message . "<br>\n";
+  $email_message .= "Mensaje: " . $message . "<br>\n";
 
   // Ahora se envía el e-mail usando la función mail() de PHP
   $headers = "MIME-Version: 1.0\r\n";

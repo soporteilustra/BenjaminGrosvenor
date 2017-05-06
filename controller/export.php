@@ -1,6 +1,6 @@
 <?php
 //Base de datos
-$conexion = new mysqli('localhost','root','root','concierto');
+$conexion = new mysqli('localhost','benjamin_root','ilustra27@@!!','benjamin_concierto');
 
 //fecha de la exportación
 $fecha = date("d-m-Y");
