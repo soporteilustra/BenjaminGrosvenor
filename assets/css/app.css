@@ -24,7 +24,7 @@ header .title-brand {
 }
 header .title-brand::after {
   content: ' ';
-  width: 77.5%;
+  width: 67.5%;
   height: 2px;
   background: #e20613;
   position: absolute;
@@ -49,6 +49,10 @@ header .title-brand::before {
   position: relative;
   background: #efeee9;
   background-image: url(../media/bgnoise.png);
+}
+#history {
+  background: #d6c9b8;
+  padding: 2em 1em;
 }
 .bg-jumbotron {
   position: relative;
@@ -237,6 +241,11 @@ form .form-group {
 #exampleModalLabel {
   color: #fff;
   font-family: 'Roboto Slab';
+}
+#band-img {
+  width: 40px;
+  margin: 0;
+  margin-right: .1em;
 }
 #register .container .row > div {
   margin-bottom: .7em;
